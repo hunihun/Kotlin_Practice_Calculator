@@ -14,6 +14,7 @@ fun main() {
     println("2. 뺄셈")
     println("3. 곱셈")
     println("4. 나눗셈")
+    println("5. 나머지")
 
     var operation = readLine()!!.toInt()
 
@@ -29,6 +30,12 @@ fun main() {
         }
         4 -> {
             println(calculator.divide())
+        }
+        5 -> {
+            println(calculator.remainder())
+        }
+        else -> {
+            println("올바른 번호를 입력하세요.")
         }
     }
 

@@ -1,25 +1,19 @@
 package com.example.calculator_kotlin
 
-class Calculator(num1 : Int, num2 : Int) {
-    var num1 = 0
-    var num2 = 0
-    init {
-        this.num1 = num1
-        this.num2 = num2
+class Calculator() {
+    fun addOperation(num1 : Double, num2 : Double, addoperation:AddOperation): Double {
+        return addoperation.operate(num1,num2)
     }
-    fun add() : Int {
-        return num1 + num2
+
+    fun substractOperation(num1 : Double, num2 : Double, substractOperation: SubstractOperation) : Double {
+        return substractOperation.operate(num1,num2)
     }
-    fun subtraction() : Int {
-        return num1 - num2
+
+    fun multiplyOperation(num1 : Double, num2 : Double, multiplyOperation: MultiplyOperation) : Double {
+        return multiplyOperation.operate(num1,num2)
     }
-    fun multiply() : Int {
-        return num1 * num2
-    }
-    fun divide() : Int {
-        return num1 / num2
-    }
-    fun remainder() : Int {
-        return num1%num2
+
+    fun divideOperation(num1 : Double, num2 : Double, divideOperation: DivideOperation) : Double {
+        return divideOperation.operate(num1,num2)
     }
 }

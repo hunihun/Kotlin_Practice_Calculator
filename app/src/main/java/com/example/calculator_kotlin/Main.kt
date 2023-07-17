@@ -19,16 +19,16 @@ fun main() {
 
     when(operation) {
         1 -> {
-            println(calc.addOperation(num1, num2, AddOperation()))
+            println(calc.operate(num1, num2, AddOperation()))
         }
         2 -> {
-            println(calc.substractOperation(num1, num2, SubstractOperation()))
+            println(calc.operate(num1, num2, SubstractOperation()))
         }
         3 -> {
-            println(calc.multiplyOperation(num1, num2, MultiplyOperation()))
+            println(calc.operate(num1, num2, MultiplyOperation()))
         }
         4 -> {
-            println(calc.divideOperation(num1, num2, DivideOperation()))
+            println(calc.operate(num1, num2, DivideOperation()))
         }
         else -> {
             println("올바른 번호를 입력하세요.")

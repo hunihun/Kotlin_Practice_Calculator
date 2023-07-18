@@ -1,6 +1,6 @@
 package com.example.calculator_kotlin
 
-class SubstractOperation : Operation(){
+class SubtractOperation : Operation(){
     override fun operate(num1: Double, num2: Double): Double {
         return num1 - num2
     }

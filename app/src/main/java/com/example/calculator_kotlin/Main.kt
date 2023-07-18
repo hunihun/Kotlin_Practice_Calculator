@@ -22,7 +22,7 @@ fun main() {
             println(calc.operate(num1, num2, AddOperation()))
         }
         2 -> {
-            println(calc.operate(num1, num2, SubstractOperation()))
+            println(calc.operate(num1, num2, SubtractOperation()))
         }
         3 -> {
             println(calc.operate(num1, num2, MultiplyOperation()))
@@ -36,3 +36,4 @@ fun main() {
     }
 
 }
+
